@@ -2,7 +2,6 @@ package app;
 
 import java.util.Scanner;
 import java.util.Locale;
-import java.util.Arrays;
 
 public class Main {
 
@@ -24,6 +23,7 @@ public class Main {
             System.out.printf("%s: ", days[i]);
             price[i] = sc.nextDouble();
         }
+        sc.close();
 
         //Сортировка по возрастанию
         for (int i = 0; i < price.length; i++) {
@@ -35,8 +35,6 @@ public class Main {
                 }
             }
         }
-
-
 
         //Расчет среднего значения
         for (double priceValue : price){
