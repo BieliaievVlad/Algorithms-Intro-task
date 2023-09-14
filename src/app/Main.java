@@ -8,7 +8,7 @@ public class Main {
     static String CURRENCY = "UAH";
     static String[] days = new String[]{"Monday", "Tuesday", "Wednesday",
             "Thursday", "Friday", "Saturday", "Sunday"};
-    static double[] price = new double[7];
+    static double[] price = new double[days.length];
     static double averagePrice;
     static Scanner sc;
 
@@ -38,7 +38,7 @@ public class Main {
 
         //Расчет среднего значения
         for (double priceValue : price){
-            averagePrice += priceValue;
+            averagePrice += priceValue / price.length;
         }
 
         //Вывод результатов
